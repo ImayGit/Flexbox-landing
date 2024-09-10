@@ -1,0 +1,93 @@
+body {
+   height: 100vh; 
+   font-family: "Open Sans", sans-serif;
+   background-color: #fff;
+}
+.box
+{
+    border:0px solid #000;
+    max-width: 650px;
+    margin: 10rem auto 2rem auto;
+    text-align: center;
+}
+.box h4 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.box h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+}
+.box p {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    /* border:1px solid #000; */
+    justify-content: center;
+}
+.item{
+    /* background-color: #000; */
+    flex-basis: 250px;
+    margin: 10px;
+    border-radius: 40px;
+}
+.item span {
+    position: absolute;
+    bottom: 6rem;
+    color:#fff;
+    font-size: 3rem;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 700;
+    margin-left: 20px;
+
+}
+#item1 {
+    background-image: url("src/image-1.jpeg");
+    background-size: cover;
+    background-position: top;
+}
+#item2 {
+    background-image: url("src/image-2.jpeg");
+    background-size: cover;
+    background-position: top;
+}
+#item3 {
+    background-image: url("src/image-3.jpeg");
+    background-size: cover;
+    background-position: top;
+}
+#item4 {
+    background-image: url("src/image-4.jpeg");
+    background-size: cover;
+    background-position: top;
+}
+@media (min-width:375px) and (max-width:768px) {
+    .box {
+        margin: 2rem auto 1rem auto;
+        text-align: center;
+      }
+    .box h2 {
+        font-size: 32px;
+    }
+    .box h4 {
+        font-size: 25px;
+    }
+    .box p {
+        font-size: 16px;
+    }
+    .container {
+    height: 225vh;
+    flex-direction: column;
+}
+    .item span {
+        bottom: auto; 
+    }
+}
